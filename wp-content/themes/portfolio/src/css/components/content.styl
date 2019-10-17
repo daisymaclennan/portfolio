@@ -1,37 +1,36 @@
-header
+.content-box
   position fixed
   top 0
   left 0
 
-h1
-  margin-bottom 0
+.content
+  overflow-y scroll
 
-h2
-  margin-top $tiny-gap
-
+/*Screen widths*/
 @media screen and (max-width: 800px)
-  header
-    width $mobile-width
+  .content-box
     padding-left $small-gap
     padding-right @padding-left
-
-  h1
-    margin-top $medium-gap
+    padding-top 130px
 
 @media screen and (min-width: 801px) and (max-width: 1440px)
-  header
-    width $ipad-width
+  .content-box
     padding-left $large-gap
     padding-right @padding-left
+    padding-top 200px
 
-  h1
-    margin-top $large-gap
+  .content
+    height calc(100vh - 250px)
 
 @media screen and (min-width: 1441px)
-  header
-    width $desktop-width
+  .content-box
     padding-left $xlarge-gap
     padding-right @padding-left
+    padding-top 240px
 
-  h1
-    margin-top 60px
+  .content
+    height calc(100vh - 340px)
+
+@media screen and (min-width: 801px)
+  .content-box
+    display flex

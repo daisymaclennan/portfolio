@@ -1,0 +1,37 @@
+ul
+  margin-top 0
+
+.link--active h3
+  font-weight bold
+
+@media screen and (max-width: 800px)
+  .link--inactive
+    display none
+
+  .link--active
+    margin-bottom $small-gap
+
+@media screen and (min-width: 801px) and (max-width: 1440px)
+  nav
+    min-width 355px
+
+  .link--active
+    background-image url('../static/bullet.svg')
+    background-size 20px
+    background-repeat no-repeat
+    background-position 0px 10px
+    padding-left 40px
+
+@media screen and (min-width: 1441px)
+  nav
+    min-width 532px
+
+  .link--active
+    background-image url('../static/bullet.svg')
+    background-repeat no-repeat
+    background-position 0px 15px
+    padding-left 45px
+
+@media screen and (min-width: 801px)
+  h3
+    margin-top 0
