@@ -22,5 +22,8 @@
     width "calc(%s - 355px)" % $ipad-width
 
 @media screen and (min-width: 1441px)
+  .expandingSection + .expandingSection
+    margin-top $medium-gap
+
   .expandingSection
     width "calc(%s - 532px)" % $desktop-width
