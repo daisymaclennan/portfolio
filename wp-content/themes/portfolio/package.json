@@ -12,6 +12,7 @@
     "@babel/preset-env": "^7.6.3",
     "autoprefixer": "^9.6.5",
     "babel-loader": "^8.0.6",
+    "core-js": "^3.3.2",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
     "mini-css-extract-plugin": "^0.8.0",
@@ -24,5 +25,10 @@
   },
   "devDependencies": {
     "webpack-cli": "^3.3.9"
-  }
+  },
+  "browserslist": [
+  ">0.25%",
+  "not ie 11",
+  "not op_mini all"
+  ]
 }

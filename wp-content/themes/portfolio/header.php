@@ -20,3 +20,6 @@
       <h1><?php the_field('name', 'option') ?></h1>
       <h2><?php the_field('tagline', 'option') ?></h1>
     </header>
+    <div class="content-box">
+    <?php get_template_part('Navigation');?>
+      <div class="content">

@@ -1,0 +1,26 @@
+.expandingSection--child
+  display none
+
+.open ~ div
+  display block!important
+  margin-top $medium-gap
+
+.open > svg
+  transform rotate(180deg)
+
+@media screen and (max-width: 800px)
+  .expandingSection + .expandingSection
+    margin-top $tiny-gap
+
+  .open ~ div
+    margin-top $small-gap
+
+@media screen and (min-width: 801px) and (max-width: 1440px)
+  .expandingSection + .expandingSection
+    margin-top $medium-gap
+  .expandingSection
+    width "calc(%s - 355px)" % $ipad-width
+
+@media screen and (min-width: 1441px)
+  .expandingSection
+    width "calc(%s - 532px)" % $desktop-width

@@ -1,0 +1,22 @@
+.project > h5
+  text-align right
+  margin-left auto
+  margin 0
+
+.project + .project
+  margin-top $large-gap
+
+@media screen and (max-width: 800px)
+  .project
+    width $mobile-width
+
+  .subheading
+    font-size 18px
+
+@media screen and (min-width: 801px) and (max-width: 1440px)
+  .project
+    width "calc(%s - 355px)" % $ipad-width
+
+@media screen and (min-width: 1441px)
+  .project
+    width "calc(%s - 532px)" % $desktop-width
