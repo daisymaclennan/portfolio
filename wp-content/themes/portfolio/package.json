@@ -24,7 +24,7 @@
     "webpack-merge": "^4.2.2"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.12"
   },
   "browserslist": [
   ">0.25%",
